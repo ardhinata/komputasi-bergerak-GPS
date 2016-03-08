@@ -101,6 +101,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         String acc = String.valueOf(location.getAccuracy());
 
         InfoContainer i = new InfoContainer();
+        i.setStatus("Tracking your movement...");
         i.setLat(lat);
         i.setLon(lon);
         i.setAlt(alt);
