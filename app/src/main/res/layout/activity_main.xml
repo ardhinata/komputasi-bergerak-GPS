@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="info.mindbreak.ardhinata.gpstracker.MainActivity">
+
+    <TextView
+        android:id="@+id/textViewTitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/title_1"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewTitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTitle1"
+        android:layout_centerHorizontal="true"
+        android:text="@string/title_2"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_below="@id/textViewTitle2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/fbi_logo"
+        android:contentDescription="@string/logo_desc" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutGPS"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textViewGpsStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stat_unstarted"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/gps_status_size"/>
+        <LinearLayout
+            android:id="@+id/linearLayoutLat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gps_status_line_spacing"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/textViewLatLabel"
+                android:layout_width="144sp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/gps_status_size"
+                android:text="@string/label_lat"/>
+            <TextView
+                android:id="@+id/textViewLatValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/gps_status_size"
+                android:text="@string/no_value" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayoutLon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gps_status_line_spacing"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/textViewLonLabel"
+                android:layout_width="144sp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/gps_status_size"
+                android:text="@string/label_lon"/>
+            <TextView
+                android:id="@+id/textViewLonValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/gps_status_size"
+                android:text="@string/no_value" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayoutAlt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gps_status_line_spacing"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/textViewAltLabel"
+                android:layout_width="144sp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/gps_status_size"
+                android:text="@string/label_alt"/>
+            <TextView
+                android:id="@+id/textViewAltValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/gps_status_size"
+                android:text="@string/no_value" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayoutAcc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gps_status_line_spacing"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/textViewAccLabel"
+                android:layout_width="144sp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/gps_status_size"
+                android:text="@string/label_acc"/>
+            <TextView
+                android:id="@+id/textViewAccValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/gps_status_size"
+                android:text="@string/no_value" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayoutHost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gps_status_line_spacing"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/textViewHostLabel"
+                android:layout_width="144sp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/gps_status_size"
+                android:text="@string/label_host"/>
+            <TextView
+                android:id="@+id/textViewHostValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/gps_status_size"
+                android:text="@string/no_value" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/button_label"
+            android:id="@+id/buttonTrack"
+            android:layout_gravity="center_horizontal"
+            android:onClick="click"/>
+    </LinearLayout>
+</RelativeLayout>

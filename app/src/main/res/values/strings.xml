@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">GPS Tracker</string>
+    <string name="action_bar_title">FBI Surveillance</string>
+    <string name="title_1">FBI Witness Protection Act</string>
+    <string name="title_2">GPS Tracker</string>
+    <string name="logo_desc">FBI Logo</string>
+    <string name="test_string">Lorem Ipsum Dolor Sit Amet</string>
+    <string name="test_string_short">Lorem Ipsum</string>
+    <string name="button_label">Start Tracking!</string>
+    <string name="label_lat">Latitude:</string>
+    <string name="label_lon">Longitude:</string>
+    <string name="label_alt">Altitude</string>
+    <string name="label_acc">Accuracy</string>
+    <string name="label_host">Tracker address:</string>
+    <string name="no_value">Unspecified</string>
+    <string name="stat_unstarted">GPS service not started</string>
+</resources>
