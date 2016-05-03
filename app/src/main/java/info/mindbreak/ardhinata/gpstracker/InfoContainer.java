@@ -1,100 +1,119 @@
 package info.mindbreak.ardhinata.gpstracker;
 
+import java.util.Calendar;
+import java.util.Date;
+
 /**
  * Created by Ardhinata Juari (ardhinata.juari@gmail.com) for GPS Tracker on 08/03/16.
  */
 public class InfoContainer {
-    private String status;
-    private String lat;
-    private String lon;
-    private String alt;
-    private String acc;
-    private String button;
-    
-    private boolean statusSet = false;
-    private boolean latSet = false;
-    private boolean lonSet = false;
-    private boolean altSet = false;
-    private boolean accSet = false;
-    private boolean buttonSet = false;
+	private String status;
+	private String lat;
+	private String lon;
+	private String alt;
+	private String acc;
+	private String button;
+	private Calendar calendar;
+	private Date date;
+
+	private boolean statusSet = false;
+	private boolean latSet = false;
+	private boolean lonSet = false;
+	private boolean altSet = false;
+	private boolean accSet = false;
+	private boolean buttonSet = false;
+	private boolean calendarSet = false;
 
 
-    public boolean isStatusSet() {
-        return statusSet;
-    }
+	public boolean isStatusSet() {
+		return statusSet;
+	}
 
-    public boolean isLatSet() {
-        return latSet;
-    }
+	public boolean isLatSet() {
+		return latSet;
+	}
 
-    public boolean isLonSet() {
-        return lonSet;
-    }
+	public boolean isLonSet() {
+		return lonSet;
+	}
 
-    public boolean isAltSet() {
-        return altSet;
-    }
+	public boolean isAltSet() {
+		return altSet;
+	}
 
-    public boolean isAccSet() {
-        return accSet;
-    }
+	public boolean isAccSet() {
+		return accSet;
+	}
 
-    public boolean isButtonSet() {
-        return buttonSet;
-    }
+	public boolean isButtonSet() {
+		return buttonSet;
+	}
+
+	public boolean isCalendarSet() {
+		return calendarSet;
+	}
 
 
-    public String getStatus() {
-        return status;
-    }
+	public String getStatus() {
+		return status;
+	}
 
-    public void setStatus(String status) {
-        this.status = status;
-        statusSet=true;
-    }
+	public void setStatus(String status) {
+		this.status = status;
+		statusSet = true;
+	}
 
-    public String getLat() {
-        return lat;
-    }
+	public String getLat() {
+		return lat;
+	}
 
-    public void setLat(String lat) {
-        this.lat = lat;
-        latSet=true;
-    }
+	public void setLat(String lat) {
+		this.lat = lat;
+		latSet = true;
+	}
 
-    public String getLon() {
-        return lon;
-    }
+	public String getLon() {
+		return lon;
+	}
 
-    public void setLon(String lon) {
-        this.lon = lon;
-        lonSet=true;
-    }
+	public void setLon(String lon) {
+		this.lon = lon;
+		lonSet = true;
+	}
 
-    public String getAlt() {
-        return alt;
-    }
+	public String getAlt() {
+		return alt;
+	}
 
-    public void setAlt(String alt) {
-        this.alt = alt;
-        altSet=true;
-    }
+	public void setAlt(String alt) {
+		this.alt = alt;
+		altSet = true;
+	}
 
-    public String getAcc() {
-        return acc;
-    }
+	public String getAcc() {
+		return acc;
+	}
 
-    public void setAcc(String acc) {
-        this.acc = acc;
-        accSet=true;
-    }
+	public void setAcc(String acc) {
+		this.acc = acc;
+		accSet = true;
+	}
 
-    public String getButton() {
-        return button;
-    }
+	public String getButton() {
+		return button;
+	}
 
-    public void setButton(String button) {
-        this.button = button;
-        buttonSet=true;
-    }
+	public void setButton(String button) {
+		this.button = button;
+		buttonSet = true;
+	}
+
+	public Calendar getCalendar() {
+		return calendar;
+	}
+
+	public void setCalendar(Calendar calendar) {
+		this.calendar = calendar;
+		calendarSet = true;
+	}
 }
